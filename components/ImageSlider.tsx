@@ -6,12 +6,14 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import { Autoplay, FreeMode } from "swiper/modules";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
 const images = [
-  "/images/image1.jpg",
-  "/images/image2.jpg",
-  "/images/image3.jpg",
-  "/images/image4.jpg",
-  "/images/image5.jpg",
+  `${basePath}/images/image1.jpg`,
+  `${basePath}/images/image2.jpg`,
+  `${basePath}/images/image3.jpg`,
+  `${basePath}/images/image4.jpg`,
+  `${basePath}/images/image5.jpg`,
 ];
 
 export default function ImageSlider() {
